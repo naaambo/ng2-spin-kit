@@ -1,24 +1,24 @@
 .word-press-spinner {
   position: relative;
+  margin: 25px auto;
   width: 30px;
   height: 30px;
-  margin: 25px auto;
-  background-color: #333;
   border-radius: 30px;
+  background-color: #333;
 
   -webkit-animation: inner-circle 1s linear infinite;
   animation: inner-circle 1s linear infinite;
 }
 
 .inner-circle {
-  display: block;
-  background: #fff;
-  width: 8px;
-  height: 8px;
   position: absolute;
-  border-radius: 8px;
   top: 5px;
   left: 5px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #fff;
 }
 
 @-webkit-keyframes inner-circle {

@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import * as spinner from './spinners'
+import * as spinner from './spinners';
 
 @Component({
+  moduleId: module.id,
   selector: 'app',
   directives: [
     spinner.RotatingPlaneComponent,
@@ -17,27 +18,11 @@ import * as spinner from './spinners'
     spinner.FadingCircleComponent,
     spinner.FoldingCubeComponent
   ],
-  styles: [`
-    .wrapper {
-      width: 480px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    
-    h1 {
-      margin-bottom: 15px;
-      padding-bottom: 15px;
-      border-bottom: 1px dashed #333;
-    }
-    
-    h3 {
-      margin-bottom: 15px;
-    }
-  `],
-  template: require('app/app.html')
+  styleUrls: ['app.css'],
+  templateUrl: './app.html'
 })
 
-export class App implements OnInit {
+export class AppComponent implements OnInit {
   ngOnInit(): any {
     console.log('App initialized!');
   }

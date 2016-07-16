@@ -1,21 +1,21 @@
-import {Component} from '@angular/core';
-import {BaseSpinner} from '../base-spinner';
+import {Component, Input, OnDestroy} from "@angular/core";
 
 @Component({
+  moduleId: module.id,
   selector: 'sk-wave',
   styleUrls: ['wave.css'],
-  template: require('./wave.html')
+  templateUrl: './wave.html'
 })
 
-export class WaveComponent extends implements OnDestroy {
-private visible: boolean = true;
-private timeout: any;
+export class WaveComponent implements OnDestroy {
+  private visible:boolean = true;
+  private timeout:any;
 
-@Input()
-public delay: number = 0;
+  @Input()
+  public delay:number = 0;
 
-@Input()
-public set isRunning(value: boolean) {
+  @Input()
+  public set isRunning(value:boolean) {
     if (!value) {
       this.cancel();
       this.visible = false;
@@ -31,12 +31,12 @@ public set isRunning(value: boolean) {
     }, this.delay);
   }
 
-private cancel(): void {
+  private cancel():void {
     clearTimeout(this.timeout);
-  this.timeout = undefined;
-}
+    this.timeout = undefined;
+  }
 
-  ngOnDestroy(): any {
+  ngOnDestroy():any {
     this.cancel();
   }
 }

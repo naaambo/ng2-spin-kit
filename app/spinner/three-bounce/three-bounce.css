@@ -1,15 +1,15 @@
 .three-bounce-spinner {
-  width: 70px;
   margin: 25px auto;
+  width: 70px;
 }
 
 .three-bounce-spinner > div {
+  display: inline-block;
   width: 18px;
   height: 18px;
-  background-color: #333;
 
   border-radius: 100%;
-  display: inline-block;
+  background-color: #333;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }

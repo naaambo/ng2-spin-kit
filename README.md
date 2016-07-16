@@ -9,7 +9,7 @@ Inspired by angular-spinkit (https://github.com/Urigo/angular-spinkit)
 
 ## Usage
 1. Install with NPM:
-  ```javascript
+  ```bash
   npm install ng2-spin-kit --save
   ```
 
@@ -73,13 +73,18 @@ Inspired by angular-spinkit (https://github.com/Urigo/angular-spinkit)
   ```
   
 #### You can generate JavaScript code based on TypeScript by:
-  ```javascript
+  ```bash
   npm run tcs
   ```
   
 #### To regenerate typings:
-  ```javascript
+  ```bash
   npm run typings
+  ```
+  
+#### To compile and run demo app in browser:
+  ```bash
+  npm start
   ```
   
 ## Add all your requests and ideas in the issues area or send us a pull request!
