@@ -15,7 +15,7 @@ Inspired by angular-spinkit (https://github.com/Urigo/angular-spinkit)
 
 2. Import one component
   ```javascript
-  import {RotatingPlaneComponent} from 'ng2-spin-kit/app/spinner/rotating-plane/rotating-plane.component'
+  import {RotatingPlaneComponent} from 'ng2-spin-kit/app/spinner/rotating-plane.component'
   ```
 
 3. or all of them
@@ -43,8 +43,7 @@ Inspired by angular-spinkit (https://github.com/Urigo/angular-spinkit)
       spinner.WordPressComponent,
       spinner.FadingCircleComponent,
       spinner.FoldingCubeComponent
-    ],
-    templateUrl: 'app/app.html'
+    ]
   })
   ```
 
