@@ -200,6 +200,7 @@ export class FadingCircleComponent implements OnDestroy {
     if (!value) {
       this.cancel();
       this.visible = false;
+      return;
     }
 
     if (this.timeout) {

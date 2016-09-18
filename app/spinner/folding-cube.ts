@@ -127,6 +127,7 @@ export class FoldingCubeComponent implements OnDestroy {
     if (!value) {
       this.cancel();
       this.visible = false;
+      return;
     }
 
     if (this.timeout) {
