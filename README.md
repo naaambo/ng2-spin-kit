@@ -73,7 +73,7 @@ Inspired by angular-spinkit (https://github.com/Urigo/angular-spinkit)
   
 #### You can generate JavaScript code based on TypeScript by:
   ```bash
-  npm run tcs
+  npm run tsc
   ```
   
 #### To regenerate typings:
