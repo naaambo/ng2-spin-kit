@@ -1,4 +1,4 @@
-import {Component, Input, OnDestroy} from "@angular/core";
+import { Component, Input, OnDestroy } from "@angular/core";
 
 @Component({
   selector: 'sk-chasing-dots',
@@ -76,36 +76,36 @@ import {Component, Input, OnDestroy} from "@angular/core";
 })
 
 export class ChasingDotsComponent implements OnDestroy {
-  private visible:boolean = true;
-  private timeout:any;
-
+  private visible: boolean = true;
+  private timeout: any;
+  
   @Input()
-  public delay:number = 0;
-
+  public delay: number = 0;
+  
   @Input()
-  public set isRunning(value:boolean) {
+  public set isRunning(value: boolean) {
     if (!value) {
       this.cancel();
       this.visible = false;
       return;
     }
-
+    
     if (this.timeout) {
       return;
     }
-
+    
     this.timeout = setTimeout(() => {
       this.visible = true;
       this.cancel();
     }, this.delay);
   }
-
-  private cancel():void {
+  
+  private cancel(): void {
     clearTimeout(this.timeout);
     this.timeout = undefined;
   }
-
-  ngOnDestroy():any {
+  
+  ngOnDestroy(): any {
     this.cancel();
   }
 }
