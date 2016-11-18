@@ -10,18 +10,37 @@ import { CubeGridComponent } from './spinner/cube-grid'
 import { WordPressComponent } from './spinner/word-press'
 import { FadingCircleComponent } from './spinner/fading-circle'
 import { FoldingCubeComponent } from './spinner/folding-cube'
+import { NgModule } from "@angular/core";
 
-export {
-  RotatingPlaneComponent,
-  DoubleBounceComponent,
-  WaveComponent,
-  WanderingCubesComponent,
-  PulseComponent,
-  ChasingDotsComponent,
-  CircleComponent,
-  ThreeBounceComponent,
-  CubeGridComponent,
-  WordPressComponent,
-  FadingCircleComponent,
-  FoldingCubeComponent
-};
+@NgModule({
+  declarations:[
+    RotatingPlaneComponent,
+    DoubleBounceComponent,
+    WaveComponent,
+    WanderingCubesComponent,
+    PulseComponent,
+    ChasingDotsComponent,
+    CircleComponent,
+    ThreeBounceComponent,
+    CubeGridComponent,
+    WordPressComponent,
+    FadingCircleComponent,
+    FoldingCubeComponent
+  ],
+  exports:[
+    RotatingPlaneComponent,
+    DoubleBounceComponent,
+    WaveComponent,
+    WanderingCubesComponent,
+    PulseComponent,
+    ChasingDotsComponent,
+    CircleComponent,
+    ThreeBounceComponent,
+    CubeGridComponent,
+    WordPressComponent,
+    FadingCircleComponent,
+    FoldingCubeComponent
+  ]
+})
+
+export default class SpinnerModule{};
